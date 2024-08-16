@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development Skills</title>
+    <style>
+      body {
+        background-color: #1e272e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: "Arial", sans-serif;
+        margin: 0;
+      }
+
+      .container {
+        width: 80%;
+        max-width: 1100px;
+        padding: 20px;
+        background-color: #f5f6fa;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        color: #ff4757;
+        margin-bottom: 40px;
+        font-size: 2.5em;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+      }
+
+      .skill-card {
+        background-color: #ffffff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+
+      .skill-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .skill-card img {
+        width: 120px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .skill-card h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #2f3542;
+      }
+
+      .skill-card p {
+        color: #57606f;
+        line-height: 1.6;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Web Development Technologies</h1>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png"
+            alt="HTML5 Logo"
+          />
+          <h2>HTML5</h2>
+          <p>
+            HTML5 is the latest evolution of the standard that defines HTML. It
+            provides a robust and consistent structure for the web, enabling
+            better integration with modern technologies.
+          </p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/640px-CSS.3.svg.png"
+            alt="CSS3 Logo"
+          />
+          <h2>CSS3</h2>
+          <p>
+            CSS3 brings a whole new level of control over the look and feel of
+            websites. It introduces features like flexbox, grid layout, and
+            animations, making it easier to create responsive and engaging
+            designs.
+          </p>
+        </div>
+        <div class="skill-card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+            alt="JavaScript Logo"
+          />
+          <h2>JavaScript</h2>
+          <p>
+            JavaScript is a powerful scripting language that enables dynamic
+            content, interactive user interfaces, and real-time updates on the
+            web. It's the backbone of modern web applications.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

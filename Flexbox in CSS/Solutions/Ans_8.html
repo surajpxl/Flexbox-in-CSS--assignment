@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Pictures</title>
+    <style>
+      body {
+        background-color: #2d3436;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .profiles {
+        display: flex;
+        gap: 30px;
+      }
+
+      .profile-img {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 12px solid #ffffff;
+        position: relative;
+        transition: transform 0.3s ease;
+      }
+
+      .profile-img:hover {
+        transform: scale(1.1);
+      }
+
+      .profile-1 {
+        z-index: 1;
+      }
+
+      .profile-2 {
+        z-index: 2;
+        margin-left: -20px;
+      }
+
+      .profile-3 {
+        z-index: 3;
+        margin-left: -20px;
+      }
+
+      .profile-4 {
+        z-index: 4;
+        margin-left: -20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="profiles">
+      <img
+        class="profile-img profile-1"
+        src="https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Profile1"
+      />
+      <img
+        class="profile-img profile-2"
+        src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?crop=entropy&cs=tinysrgb&fit=max&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGF2YXRhcnxlbnwwfHx8fDE2NTI0Mzk5MDg&ixlib=rb-1.2.1&q=80&w=1080"
+        alt="Profile2"
+      />
+      <img
+        class="profile-img profile-3"
+        src="https://images.pexels.com/photos/432059/pexels-photo-432059.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Profile3"
+      />
+      <img
+        class="profile-img profile-4"
+        src="https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Profile4"
+      />
+    </div>
+  </body>
+</html>
